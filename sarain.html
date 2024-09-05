@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imagenes/Fondo_Sara.jpg'); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .profile-card {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .profile-card h2, h3, h4, h5 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .profile-card .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #555;
+        }
+        .profile-card .social-links a:hover {
+            color: #007BFF;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="imagenes/sara.jpg" alt="Foto de Perfil" id="profile-image">
+        <h2>Sarain Israel Robledo Banda 100000454</h2>
+        <h3>Alumno de la Facultad de Contaduría y Administración</h3>
+        <h4>Estudiante de la Universidad Autónoma de Chiapas</h4>
+        <h5>Licenciatura en Sistemas Computacionales</h5>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/sarain.bandanandayapa?mibextid=ZbWKwL" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/sirb04?igsh=YzN3dDVtbHo2ajE5" target="_blank">Instagram</a>
+        </div>
+
+        <!-- Botón de regresar -->
+        <a href="index.html" class="back-button" onclick="goBack(); return false;">Regresar</a>
+    </div>
+
+    <script>
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back(); 
+            } else {
+                window.location.href = 'index.html'; 
+            }
+        }
+    </script>
+
+</body>
+</html>
