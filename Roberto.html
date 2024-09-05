@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            /* Ubicación de la imagen de fondo */          
+            background-image: url(imagenes/fondo_aquino.jpg);       
+            background-position: center center;
+            background-repeat: no-repeat;    
+            background-attachment: fixed;           
+            background-size: cover;                        
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            color: black;
+        }
+
+        .profile-container img {
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 30px; /* Espacio entre la imagen y el contenido de texto */
+        }
+
+        .content {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Imagen alineada a la izquierda -->
+        <img src="imagenes/aquino2.jpg" alt="Foto de perfil">
+        <div class="content">
+            <p><b>Nombre Completo:</b> Roberto Abisai Aquino Vázquez</p>
+            <p><b>Correo:</b> roberto.aquino22@unach.com</p>
+            <p><b>Matrícula:</b> 100005800</p>
+            <p><b>Licenciatura:</b> Licenciatura en Sistemas Computacionales</p>
+            <p><b>Grado y Grupo:</b> 5-J</p>
+    
+            <!-- Botón para regresar a index.html -->
+            <a href="index.html" class="button">Regresar al menú</a>
+        </div>
+    </div>
+</body>
+</html>
+
