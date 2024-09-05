@@ -3,22 +3,33 @@
 <head>
     <style>
         body {
-            /* Ubicación de la imagen */          
+            /* Ubicación de la imagen de fondo */          
             background-image: url(imagen1.avif);       
-            /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */  
             background-position: center center;
-            /* Para que la imagen de fondo no se repita */          
             background-repeat: no-repeat;    
-            /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */           
             background-attachment: fixed;           
-            /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */          
             background-size: cover;                        
         }
 
-        .content {
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
             color: black;
-            text-align: center;
-            padding-top: 20px;
+        }
+
+        .profile-container img {
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 30px; /* Espacio entre la imagen y el contenido de texto */
+        }
+
+        .content {
+            text-align: left;
+            font-size: 16px;
         }
 
         .button {
@@ -40,15 +51,20 @@
     <title>Mi perfil</title>
 </head>
 <body>
-    <div class="content">
-        <td><b>Nombre Completo:</b> Roberto Abisai Aquino Vázquez</td><br>
-        <p><td><b>Correo:</b> roberto.aquino22@unach.com</td></p>
-        <td><b>Matrícula:</b> 100005800</td><br>
-        <p><b>Licenciatura:</b> Licenciatura en Sistemas Computacionales</p>
-        <p><b>Grado y Grupo:</b> 5-J</p>
-
-        <!-- Botón para regresar a index.html -->
-        <a href="index.html" class="button">Regresar</a>
+    <div class="profile-container">
+        <!-- Imagen alineada a la izquierda -->
+        <img src="imagenes/aquino2.jpg" alt="Foto de perfil">
+        <div class="content">
+            <p><b>Nombre Completo:</b> Roberto Abisai Aquino Vázquez</p>
+            <p><b>Correo:</b> roberto.aquino22@unach.com</p>
+            <p><b>Matrícula:</b> 100005800</p>
+            <p><b>Licenciatura:</b> Licenciatura en Sistemas Computacionales</p>
+            <p><b>Grado y Grupo:</b> 5-J</p>
+    
+            <!-- Botón para regresar a index.html -->
+            <a href="index.html" class="button">Regresar</a>
+        </div>
     </div>
 </body>
 </html>
+
