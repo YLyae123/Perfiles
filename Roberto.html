@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <style>
-        body{
+        body {
             /* Ubicación de la imagen */          
             background-image: url(imagen1.avif);       
             /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */  
@@ -13,18 +13,42 @@
             background-attachment: fixed;           
             /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */          
             background-size: cover;                        
-    }
+        }
+
+        .content {
+            color: black;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 8px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi perfil</title>
 </head>
-<body background="imagen1.avif">
-    <td><b>Nombre Completo</b> Roberto Abisai Aquino Vázquez</td>
-    <p><td><b>Correo:</b> roberto.aquino22@unach.com</td></p>
-    <td><b>Matricula:</b> 100005800</td>
-    <p><b>Licenciatura:</b> Licenciatura en Sistemas Computacionales</p>
-    <p><b>Grado y Grupo:</b> 5-J</p>
-    
+<body>
+    <div class="content">
+        <td><b>Nombre Completo:</b> Roberto Abisai Aquino Vázquez</td><br>
+        <p><td><b>Correo:</b> roberto.aquino22@unach.com</td></p>
+        <td><b>Matrícula:</b> 100005800</td><br>
+        <p><b>Licenciatura:</b> Licenciatura en Sistemas Computacionales</p>
+        <p><b>Grado y Grupo:</b> 5-J</p>
+
+        <!-- Botón para regresar a index.html -->
+        <a href="index.html" class="button">Regresar</a>
+    </div>
 </body>
 </html>
